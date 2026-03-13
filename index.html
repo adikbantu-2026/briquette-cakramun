@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Indonesian coconut charcoal briquette manufacturer and exporter for shisha and BBQ charcoal worldwide.">
+    <meta name="keywords"
+        content="coconut charcoal briquette supplier, shisha charcoal manufacturer, hookah charcoal supplier Indonesia">
+    <meta name="author" content="Indonesia Briquette Export">
+
+    <title>Coconut Charcoal Briquette</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="production.html">Production</a>
+            <a href="quality.html">Quality</a>
+            <a href="export-market.html">Export Market</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slider">
+
+            <div class="slide active" style="background-image:url('images/hero1.jpg')"></div>
+            <div class="slide" style="background-image:url('images/hero2.jpg')"></div>
+            <div class="slide" style="background-image:url('images/hero3.jpg')"></div>
+
+        </div>
+
+        <div class="hero-content">
+        <h1>Coconut Charcoal Briquette</h1>
+
+        <p>
+            Premium Indonesian Coconut Shell Charcoal Briquettes
+            For Shisha and BBQ Market
+        </p>
+        <p>
+            - Cakrawala Muda Nusantara -
+        </p>
+        <a href="contact.html" class="btn">Request Quotation</a>
+    </section>
+
+    <section class="about">
+        <h2>About Our Company</h2>
+
+        <p>
+            We are an Indonesian exporter of coconut shell charcoal briquettes, offering high-quality products and
+            reliable supply capacity to international buyers. Our goal is to provide a renewable resource, support
+            sustainable living, and deliver economic benefits to local communities
+            as well as reach consumers abroad.
+        </p>
+    </section>
+
+    <section class="advantages">
+
+        <h2>Why Choose Us</h2>
+        <ul>
+            <li>
+                <i class="fa-solid fa-seedling"></i>
+                High Quality Coconut Shell
+            </li>
+            <li>
+                <i class="fa-solid fa-fire"></i>
+                Long Burning Time
+            </li>
+            <li>
+                <i class="fa-solid fa-leaf"></i>
+                Low Ash Content
+            </li>
+            <li>
+                <i class="fa-solid fa-industry"></i>
+                Modern Factory
+            </li>
+            <li>
+                <i class="fa-solid fa-globe"></i>
+                Global Export Ready
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 Cakrawala Muda Nusantara</p>
+    </footer>
+
+    <a href="https://wa.me/6282221506476" class="wa">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+<script>
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+function showSlide(){
+    slides.forEach((slide)=>{
+    slide.classList.remove("active");
+    });
+    index++;
+
+if(index >= slides.length){
+index = 0;
+}
+slides[index].classList.add("active");
+}
+
+setInterval(showSlide,5000);
+</script>
+</body>
+
+</html>

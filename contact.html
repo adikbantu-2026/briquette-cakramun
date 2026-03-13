@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Indonesian coconut charcoal briquette manufacturer and exporter for shisha and BBQ charcoal worldwide.">
+    <meta name="keywords"
+        content="coconut charcoal briquette supplier, shisha charcoal manufacturer, hookah charcoal supplier Indonesia">
+    <meta name="author" content="Indonesia Briquette Export">
+
+    <title>Coconut Charcoal Briquette</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo"> Cakrawala Muda Nusantara
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="production.html">Production</a>
+            <a href="quality.html">Quality</a>
+            <a href="export-market.html">Export Market</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Buyer Inquiry</h2>
+        <p class="contact-desc">
+            Please fill the form below. Our export team will contact you shortly.
+        </p>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="waForm">
+                    <label>Buyer Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label>Country</label>
+                    <input type="text" id="country" placeholder="Your country">
+                    <label>WhatsApp Number</label>
+                    <input type="text" id="phone" placeholder="+62 812 xxxx xxxx">
+                    <button type="submit">Send Inquiry via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Cakrawala Muda Nusantara</p>
+    </footer>
+    <a href="https://wa.me/6282221506476" class="wa">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById("waForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let country = document.getElementById("country").value;
+            let phone = document.getElementById("phone").value;
+
+            /* GANTI DENGAN NOMOR WHATSAPP ANDA */
+            let adminNumber = "6282221506476";
+            let message =
+                `Hello, I am interested in your Coconut Charcoal Briquettes.
+            Name: ${name}
+            Email: ${email}
+            Country: ${country}
+            WhatsApp: ${phone}`;
+            let url = "https://wa.me/" + adminNumber + "?text=" + encodeURIComponent(message);
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+
+</html>
